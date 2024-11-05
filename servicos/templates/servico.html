@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href="{% static 'clientes/css/clientes.css' %}">
+    <link rel="stylesheet" href="{% static 'servicos/css/listar_servico.css' %}">
+{% endblock %}
+
+
+{% block 'dashboard' %}
+    <br>
+    <br>
+    <div class="container">
+        <a class="btn btn-info" href="{% url 'gerar_os' servico.identificador %}">GERAR OS</a>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+            Serviço adicional
+        </button>
+        <br>
+        <br>
+        <h3>{{servico.titulo}}<h3>
+        
+    </div>
+
+
+
+{% endblock %}
+
+
+
+
