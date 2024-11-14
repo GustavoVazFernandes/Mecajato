@@ -68,6 +68,9 @@ def gerar_os(request, identificador):
    
     return FileResponse(pdf_bytes, as_attachment=True, filename=f"os-{servico.protocole}.pdf")
 
+def psi(request):
+    return render(request, 'psi.html')
+
 
 # def servico_adicional(request):
 #     identificador_servico = request.POST.get('identificador_servico')

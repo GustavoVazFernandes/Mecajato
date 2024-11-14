@@ -10,5 +10,4 @@ urlpatterns = [
     path('', login_view, name='login'),
     path('signup/', signup_view, name='signup'),
     path('logout/', logout_view, name='logout'),
-    path('home/', base_view, name='home'),  # Ponto de entrada
 ]
